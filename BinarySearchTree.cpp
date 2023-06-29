@@ -36,5 +36,20 @@ public:
 		newNode->info = element;  // Assign value to the data field of the new node.
 		newNode->leftchild = NULL;  // Make the left child of the new node point to NULL.
 		newNode->rightchild = NULL;  // Make the right child of the new node point to NULL.
+
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		search(element, parent, currentNode); // locate the node wich will be the parent of the node to be inserted
+
+		if (parent == NULL)
+		{
+			ROOT = newNode;  // Mark the new node as ROOT.
+			return;   // Exit.
+		}
+
+		if (element < parent->info)  // if the value in the data field of the new node is less than that of the parent
+		{
+			parent->leftchild = newNode; // Make the left child of the parent point to the new node.
+		}
 	}
 };
