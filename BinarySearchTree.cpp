@@ -10,4 +10,5 @@ public :
 	Node* rightchild;
 
 	// Constructor for the node class
+
 };
