@@ -139,7 +139,7 @@ int main()
 		
 		char ch;
 		cin >> ch;
-		cout << endl;
+		cout << endl; 
 		
 		switch (ch)
 		{
