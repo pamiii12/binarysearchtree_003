@@ -148,7 +148,7 @@ int main()
 			cout << "Enter a word : ";
 			string word;
 			cin >> word;
-			obj.insert(word);
+			obj.insert(word); 
 			break;
 		}
 		case 2:
@@ -158,7 +158,7 @@ int main()
 		}
 		case 3:
 		{
-			obj.preorder(obj.ROOT);
+			obj.preorder(obj.ROOT); 
 			break;
 		}
 		case 4:
